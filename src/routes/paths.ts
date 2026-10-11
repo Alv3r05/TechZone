@@ -1,0 +1,17 @@
+export const ROUTES = {
+  HOME: "/",
+  PRODUCTS: "/products",
+  PRODUCT_DETAIL: (id: number | string): string => `/products/${id}`,
+  PRODUCT_DETAIL_PATH: "/products/:id",
+  CART: "/cart",
+  LOGIN: "/login",
+  REGISTER: "/register",
+  ORDERS: "/orders",
+  ORDER_DETAIL: (id: number | string): string => `/orders/${id}`,
+  ORDER_DETAIL_PATH: "/orders/:id",
+  SELL_PRODUCT: "/sell-product",
+  MY_PRODUCTS: "/my-products",
+  EDIT_PRODUCT: (id: number | string): string => `/product/edit/${id}`,
+  EDIT_PRODUCT_PATH: "/product/edit/:id",
+  NOT_FOUND: "*",
+} as const;
